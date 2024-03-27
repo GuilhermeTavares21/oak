@@ -1,0 +1,22 @@
+<div class="container mt-3">
+<form (ngSubmit)="cadastrarProduto()" class="d-flex flex-column align-items-center">
+  <mat-form-field>
+    <input matInput placeholder="Nome" [(ngModel)]="produto.nome" name="nome">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Descrição" [(ngModel)]="produto.descricao" name="descricao">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Valor" [(ngModel)]="produto.valor" name="valor">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Disponível</mat-label>
+    <mat-select [(value)]="produto.disponivel" name="disponivel">
+      <mat-option value="Sim">Sim</mat-option>
+      <mat-option value="Não">Não</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button type="submit" mat-raised-button color="primary" class="btn btn-primary">Cadastrar Produto</button>
+  <button routerLink="/listarProdutos" type="submit" mat-raised-button color="primary" class="btn btn-secondary mt-3">Ir para lista</button>
+</form>
+</div>

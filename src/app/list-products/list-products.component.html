@@ -1,0 +1,26 @@
+<div class="container">
+<div class="d-flex justify-content-between">
+  <h2>Lista de Produtos:</h2>
+  <button routerLink="/cadastroProduto" type="button" class="btn btn-primary">Cadastrar</button>
+</div>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Disponivel para venda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produtos of listaProdutos">
+          <th scope="row">{{produtos.id}}</th>
+          <td>{{produtos.nome}}</td>
+          <td>{{produtos.descricao}}</td>
+          <td>{{produtos.valor}}</td>
+          <td>{{produtos.disponivel}}</td>
+        </tr>
+      </tbody>
+</table>
+</div>

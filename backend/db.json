@@ -1,0 +1,11 @@
+{
+  "produtos": [
+    {
+      "id": "224b",
+      "nome": "Detergente",
+      "descricao": "Ype",
+      "valor": 5.99,
+      "disponivel": "Sim"
+    }
+  ]
+}
